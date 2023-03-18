@@ -4,10 +4,12 @@ import (
 	"database/sql"
 	"fmt"
 	"log"
+
+	_ "github.com/go-sql-driver/mysql"
 )
 
 func main() {
-	stringConexao := "golang:golang@tcp(localhost:3306)/devbook?charset=utf8&parseTime=True&loc=Local"
+	stringConexao := "golang:golang@tcp(54.144.118.255:3306)/devbook?charset=utf8&parseTime=True&loc=Local"
 	db, erro := sql.Open("mysql", stringConexao)
 	if erro != nil {
 		log.Fatal(erro)

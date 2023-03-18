@@ -6,15 +6,7 @@ import (
 )
 
 func main() {
-	// HTTP É UM PROTOCOLO DE COMUNICAÇÃO - BASE DA COMUNICAÇÃO WEB
 
-	// CLIENTE (FAZ REQUISIÇÃO) - SERVIDOR (PROCESSA REQUISIÇÃO E ENVIA RESPOSTA)
-
-	// Request - Response
-
-	// Rotas
-	// URI - Identificador do Recurso
-	// Método - GET, POST, PUT, DELETE
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) { // raiz
 		w.Write([]byte("Página Raiz!"))
